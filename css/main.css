@@ -47,6 +47,15 @@ img {
   margin-bottom: 7rem;
 }
 
+.heading-tertiary {
+  font-size: 4rem;
+  font-size: clamp(3rem, calc(5vw + 1.5rem), 5.5rem);
+  color: #fff;
+  text-transform: uppercase;
+  text-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
+  line-height: 1.1;
+}
+
 .btn, .btn:link, .btn:visited {
   text-decoration: none;
   text-transform: uppercase;
@@ -54,7 +63,7 @@ img {
   font-size: 2rem;
   font-weight: 700;
   display: inline-block;
-  background: #4242f8;
+  background: #faa700;
   color: #fff;
   border-radius: 0.5rem;
   -webkit-transition: opacity 0.5s linear, -webkit-transform 0.5s ease-in-out;
@@ -110,8 +119,15 @@ img {
   }
 }
 
+.hero p {
+  font-size: 2rem;
+}
+
+/**** 
+    Hero End 
+****/
 section {
-  padding: 10rem 0;
+  padding: 10rem 0 6rem 0;
 }
 
 .featured {
@@ -157,6 +173,7 @@ section {
   opacity: 0;
   -webkit-transition: opacity .35s linear;
   transition: opacity .35s linear;
+  font-size: 1.6rem;
 }
 
 .featured__details span {
@@ -164,5 +181,92 @@ section {
   font-weight: 700;
   font-size: 3rem;
   text-shadow: 0 0 0.5rem white;
+}
+
+/**** 
+   Featured Product End 
+****/
+.products__item {
+  background: radial-gradient(#83e286, #4CAF50);
+  padding: 5rem;
+  border-radius: 4rem;
+  text-align: center;
+}
+
+.products__item:not(:last-child) {
+  margin-bottom: 8rem;
+}
+
+.products__item--red {
+  background: radial-gradient(#faa700, #e48d00);
+}
+
+.products__item--red .btn {
+  background: #a1173c;
+}
+
+.products__item--white {
+  background: radial-gradient(#fce4b3, #eac886);
+}
+
+.products__item--white .btn {
+  background: #2f4858;
+}
+
+.products__item--blue {
+  background: radial-gradient(#6dd5ed, #2193b0);
+}
+
+.products__item--blue .btn {
+  background: #008951;
+}
+
+.products__img {
+  margin-top: -10rem;
+}
+
+@media (min-width: 45em) {
+  .products .products__item {
+    text-align: left;
+  }
+  .products .products__img {
+    float: right;
+    width: 60%;
+  }
+}
+
+.products__description {
+  font-size: 1.5rem;
+}
+
+/**** 
+    Products End 
+****/
+footer {
+  background: #eee;
+  padding: 2rem 0;
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+footer a {
+  display: inline-block;
+}
+
+footer a, footer a:hover, footer a:visited {
+  text-decoration: none;
+  color: #333;
+  opacity: 0.9;
+}
+
+footer a:hover {
+  -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
+}
+
+footer .copyleft {
+  display: inline-block;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 /*# sourceMappingURL=main.css.map */
